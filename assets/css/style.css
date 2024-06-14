@@ -1,0 +1,11 @@
+.banner-image {
+  background-image: url(../img/banner-image.avif);
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+}
+
+.input-group-text {
+      cursor: pointer;
+    }
