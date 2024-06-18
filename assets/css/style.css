@@ -7,5 +7,49 @@
 }
 
 .input-group-text {
-      cursor: pointer;
-    }
+  cursor: pointer;
+  background-color: white;
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+}
+#map {
+  height: 400px;
+  width: 100%;
+}
+.card {
+  border-radius: 10px !important;
+}
+.card img {
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card:hover {
+  scale: 1.05;
+  transition: 0.4s;
+}
+.card {
+  transition: 0.4s;
+}
+.form-control {
+  border: none !important;
+}
+
+.contact-image {
+  position: relative;
+}
+
+.content-image-text {
+  position: absolute;
+  bottom: 0;
+  color: #f1f1f1;
+}
+.collections_of_jaipur a {
+  text-decoration: none;
+}
