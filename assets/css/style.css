@@ -53,3 +53,31 @@
 .collections_of_jaipur a {
   text-decoration: none;
 }
+.collections_of_jaipur_2 a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .text-truncate {
+    font-size: 12px !important;
+    display: block;
+  }
+  .card-title {
+    font-size: 14px;
+  }
+  .content-image-text h6 {
+    font-size: 14px;
+  }
+  .content-image-text p {
+    font-size: 13px;
+  }
+  .collections_of_jaipur {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .collections_of_jaipur_2{
+    display: none;
+  }
+}
