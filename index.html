@@ -53,6 +53,7 @@
             >
               <span class="bi bi-list text-white fw-bold"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -121,21 +122,23 @@
           <div class="col-md-8 offset-md-2">
             <div class="input-group mt-4">
               <span class="input-group-text" id="getLocationBtn"
-                ><i class="bi bi-geo-alt-fill"></i
+                ><i class="bi bi-geo-alt-fill text-danger"></i
               ></span>
               <input
                 type="text"
                 id="location"
-                class="form-control"
+                class="form-control p-4"
                 placeholder="Location"
                 aria-label="Location"
               />
-              <span class="input-group-text"><i class="bi bi-search"></i></span>
+              <span class="input-group-text"
+                ><i class="bi bi-search text-muted border-none"></i
+              ></span>
               <input
                 type="text"
                 id="server"
-                class="form-control"
-                placeholder="Search"
+                class="form-control p-4"
+                placeholder="Search for restaurant, cuisine or a dish"
                 aria-label="Server"
               />
             </div>
@@ -143,6 +146,127 @@
         </div>
       </div>
     </section>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4 online-order">
+          <div class="card mt-4" style="width: auto">
+            <img
+              src="assets/img/e5b8785c257af2a7f354f1addaf37e4e1647364814.avif"
+              class="card-img-top"
+              alt="..."
+              height="160px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Order Online</h5>
+              <p class="card-text text-muted fs-6">
+                Stay home and order to your doorstep
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 online-order">
+          <div class="card mt-4" style="width: auto">
+            <img
+              src="assets/img/d026b357feb0d63c997549f6398da8cc1647364915.avif"
+              class="card-img-top"
+              alt="..."
+              height="160px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dining</h5>
+              <p class="card-text text-muted fs-6">
+                View the city's favourite dining venues
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 online-order">
+          <div class="card mt-4" style="width: auto">
+            <img
+              src="assets/img/d9d80ef91cb552e3fdfadb3d4f4379761647365057.avif"
+              class="card-img-top"
+              alt="..."
+              height="160px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nightlife and Clubs</h5>
+              <p class="card-text text-muted fs-6">
+                Explore the city’s top nightlife outlets
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-9">
+          <h2>Collections</h2>
+          <p class="text-muted">
+            Explore curated lists of top restaurants, cafes, pubs, and bars in
+            Jaipur, based on trends
+          </p>
+        </div>
+        <div class="col-md-3 mt-5 collections_of_jaipur">
+          <a href="" class="text-danger"
+            >All collections in Jaipur
+            <i class="bi bi-caret-right-fill ms-2"></i
+          ></a>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-3 col-sm-6 mt-3 contact-image">
+            <img
+              class="img-fluid rounded"
+              src="assets/img/img7.avif"
+              alt="Notebook"
+              style="width: 270px; height: 300px"
+            />
+            <div class="content-image-text ps-3">
+              <h6>Newly Opened Restaurants</h6>
+              <p>13 Places <i class="bi bi-caret-right-fill ms-2"></i></p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mt-3 contact-image">
+            <img
+              class="img-fluid rounded"
+              src="assets/img/img6.avif"
+              alt="Notebook"
+              style="width: 270px; height: 300px"
+            />
+            <div class="content-image-text ps-3">
+              <h6>Newly Opened Restaurants</h6>
+              <p>13 Places <i class="bi bi-caret-right-fill ms-2"></i></p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mt-3 contact-image">
+            <img
+              class="img-fluid rounded"
+              src="assets/img/img7.avif"
+              alt="Notebook"
+              style="width: 270px; height: 300px"
+            />
+            <div class="content-image-text ps-3">
+              <h6>Newly Opened Restaurants</h6>
+              <p>13 Places <i class="bi bi-caret-right-fill ms-2"></i></p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mt-3 contact-image">
+            <img
+              class="img-fluid rounded"
+              src="assets/img/img7.avif"
+              alt="Notebook"
+              style="width: 270px; height: 300px"
+            />
+            <div class="content-image-text ps-3">
+              <h6>Newly Opened Restaurants</h6>
+              <p>13 Places <i class="bi bi-caret-right-fill ms-2"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script>
       document
@@ -165,10 +289,9 @@
           position.coords.latitude +
           ", Longitude: " +
           position.coords.longitude;
-          
+        console.log(position);
       }
 
-      
       function showError(error) {
         switch (error.code) {
           case error.PERMISSION_DENIED:
