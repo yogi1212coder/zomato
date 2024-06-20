@@ -1,3 +1,7 @@
+body {
+  font-family: Okra, Helvetica, sans-serif;
+}
+
 .banner-image {
   background-image: url(../img/banner-image.avif);
   height: auto;
@@ -75,13 +79,20 @@
     display: none;
   }
 }
-
 @media only screen and (min-width: 600px) {
   .collections_of_jaipur_2 {
     display: none;
   }
 }
-.place_order div {
-  margin-top: -60px;
-  margin-right: -200px; 
+
+/* .order-places {
+  box-shadow: rgba(28, 28, 28, 0.064) 0px 1.42623px 2.85246px;
 }
+.order-places::after {
+  box-sizing: inherit;
+} */
+.order-places:hover {
+  box-shadow: rgba(28, 28, 28, 0.217) 0px 4px 8px;
+  transition: 0.4s;
+}
+
