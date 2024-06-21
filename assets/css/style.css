@@ -78,6 +78,13 @@ body {
   .collections_of_jaipur {
     display: none;
   }
+  .footer-btn {
+    margin-top: 20px !important;
+  }
+
+  .social_links img {
+    display: none !important;
+  }
 }
 @media only screen and (min-width: 600px) {
   .collections_of_jaipur_2 {
@@ -96,3 +103,24 @@ body {
   transition: 0.4s;
 }
 
+.footer-heading-text {
+  font-size: 14px;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+.list-unstyled li a {
+  font-size: 12px;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+.accordion-button {
+  background: none !important;
+  color: black;
+}
+.accordion-button:focus {
+  background: none !important;
+  box-shadow: none !important;
+  color: black;
+}
